@@ -29,7 +29,7 @@ public class ProductController {
     calculating utility = new calculating();
 
     //Read
-    @CrossOrigin(origins = {"http://localhost:5173"}, allowCredentials = "false")
+//    @CrossOrigin(origins = {"http://localhost:5173"}, allowCredentials = "false")
     @GetMapping("/")
     public List<Product> getAllProducts() {
         List<Product> products = productService.findProducts();
